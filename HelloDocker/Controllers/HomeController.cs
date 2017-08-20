@@ -17,7 +17,7 @@ namespace HelloDocker.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
 
             return View();
         }
